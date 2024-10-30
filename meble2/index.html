@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekskluzywny Sklep z Meblami</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Nagłówek -->
+  <header class="hero-section">
+    <nav class="responsive-nav">
+      <div class="logo">Sklep firmowy</div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Strona Główna</a></li>
+        <li><a href="#collection">Kolekcja</a></li>
+        <li><a href="#about">O nas</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1 class="hero-title">Ponadczasowe Luksusowe Meble</h1>
+      <p class="hero-subtitle">Tworzone z pasją, zaprojektowane z myślą o elegancji.</p>
+      <a href="#collection" class="cta-btn">Zobacz Kolekcję</a>
+    </div>
+  </header>
+
+  <!-- Kolekcja (Product Collection Section) -->
+  <section id="collection" class="collection-section">
+    <h2>Nasza Ekskluzywna Kolekcja</h2>
+    <div class="collection-grid responsive-grid">
+      <!-- Top 3 Products (Always Visible) -->
+      <div class="collection-item">
+        <img src="zdjęcia/2.jpg" alt="Luksusowa Sofa">
+        <h3>Bliss 2,5-OT</h3>
+        <p>2 000 zł</p>
+      </div>
+      <div class="collection-item">
+        <img src="zdjęcia/3.jpg" alt="Designerski Fotel">
+        <h3>Arek 3DL</h3>
+        <p>1 200 zł</p>
+      </div>
+      <div class="collection-item">
+        <img src="zdjęcia/4.jpg" alt="Elegancki Stół">
+        <h3>X</h3>
+        <p>3 500 zł</p>
+      </div>
+
+      <!-- Additional Products (Initially Hidden) -->
+      <div class="collection-item hidden">
+        <img src="zdjęcia/6.jpg" alt="Nowoczesny Stolik">
+        <h3>London 2-OT</h3>
+        <p>900 zł</p>
+      </div>
+      <div class="collection-item hidden">
+        <img src="zdjęcia/8.jpg" alt="Elegancka Biblioteczka">
+        <h3>X</h3>
+        <p>1 800 zł</p>
+      </div>
+      <div class="collection-item hidden">
+        <img src="zdjęcia/11.jpg" alt="Łóżko King Size">
+        <h3>X</h3>
+        <p>4 500 zł</p>
+      </div>
+
+      <!-- More Hidden Products -->
+      <div class="collection-item hidden">
+        <img src="zdjęcia/12.jpg" alt="Luksusowe Krzesło">
+        <h3>Fox</h3>
+        <p>600 zł</p>
+      </div>
+      <div class="collection-item hidden">
+        <img src="zdjęcia/13.jpg" alt="Szafa Drewniana">
+        <h3>X</h3>
+        <p>2 200 zł</p>
+      </div>
+      <div class="collection-item hidden">
+        <img src="zdjęcia/14.jpg" alt="Lampa Podłogowa">
+        <h3>Siesta OT-E-2,5</h3>
+        <p>500 zł</p>
+      </div>
+    </div>
+
+    <!-- Show More/Show Less Button -->
+    <div class="show-more-container">
+      <button class="show-more-btn">Pokaż więcej</button>
+    </div>
+  </section>
+
+  <!-- Sekcja O Nas -->
+  <section id="about" class="about-section responsive-flex">
+    <div class="about-content">
+      <h2>O nas</h2>
+      <p>W LuxMeble wierzymy, że meble to coś więcej niż funkcjonalność. To wyraz Twojego stylu. Z ponad 25-letnim doświadczeniem, nasze meble łączą ponadczasową elegancję z nowoczesnym designem, oferując to, co najlepsze z obu światów.</p>
+    </div>
+    <img src="showroom.jpg" alt="Zdjęcie Salonu" class="about-img">
+  </section>
+
+  <!-- Sekcja Kontakt -->
+  <section id="contact" class="contact-section">
+    <h2>Skontaktuj się z nami</h2>
+    <p>Masz pytania lub chcesz umówić się na konsultację? Skontaktuj się z nami poniżej.</p>
+    <form action="https://formspree.io/f/mrbgzqre" method="POST" class="responsive-form">
+      <input type="text" name="name" placeholder="Twoje Imię" required>
+      <input type="email" name="email" placeholder="Twój Email" required>
+      <textarea name="message" placeholder="Twoja Wiadomość" rows="4" required></textarea>
+      <button type="submit" class="cta-btn">Wyślij Wiadomość</button>
+    </form>
+  </section>
+
+  <!-- Stopka -->
+  <footer class="responsive-footer">
+    <p>&copy; 2024 LuxMeble. Wszelkie Prawa Zastrzeżone.</p>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- Include your JavaScript file -->
+  <script src="jason.js"></script>
+
+  <!-- Add this at the end of your body tag -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+</body>
+</html>
